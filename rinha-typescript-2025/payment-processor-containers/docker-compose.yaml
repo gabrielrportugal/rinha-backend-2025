@@ -1,7 +1,8 @@
 x-service-templates:
   # Base app service template
   app-base: &app-base
-    image: joaocrulhas/rinha_backend:1.0
+    build:
+      context: .
     networks:
       - backend
       - payment-processor
